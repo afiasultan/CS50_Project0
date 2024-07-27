@@ -10,32 +10,32 @@ body {
 }
 
 .header {
-    background-color: #fff1e0a9;
+    background-color: #fff4fa;
     padding: 20px 20px 20px 20px;
     color: black;
     text-align: center;
     margin-top: 20px;
     border-radius: 10px;
-    
-    
 }
 
 .header:hover{
-    background-color: #ffe4d5a3;
-    color: black
+    background-color: #ffe6f9;
 }
 
-.top-align-container {
+.align-container {
     display: flex;
     align-items: center; 
     justify-content: space-between; 
     margin: 10px; 
+    flex-wrap:wrap;
+    
+    
 }
 
 .linkedin-icon {
     width: 70px; 
     height: 70px; 
-    fill: #eef2f4; 
+    fill: #7a9ebc; 
     padding: 5px 5px 5px 5px
 }
 
@@ -47,11 +47,137 @@ body {
     text-align: right;
     color: black;
     padding: 5px 5px 5px 5px;
-    background-color: #ffe4d5a3;
+    background-color: #98bad5;
     border-radius: 10px;
 }
 
 .contact:hover {
-    background-color: #fff1e0a9;
+    background-color: #084461;
+    color: white;
 }
 
+.info {
+    text-align: center;
+    color: black;
+    padding: 5px 5px 5px 5px;
+    background-color: #fff4fa;
+    margin: 5px;
+    box-sizing: border-box;
+    flex: 1 1 200px; 
+    max-width: 100%;
+    border-radius: 50px;
+    
+}
+
+.info:hover{
+    background-color: #ffe6f9;
+    transform: translateY(-2px);
+    
+}
+
+.dropdown {
+    position:relative;
+    display: inline-flex;
+    margin-right: 3%;
+    margin-left: 3%;
+    
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #98bad5;
+    color: black;
+    min-width: 90%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin: 5px;
+    padding: 10px 10px 10px 10px;
+    text-align: justify;
+    z-index: 1;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.progress {
+    font-size: larger; 
+    
+}
+
+.image {
+    width: 50%;
+}
+
+.info > p {
+    font-size: 20px;
+    padding: 10px;
+}
+
+button {
+    --glow-color: #d8e1e8;
+    --glow-spread-color: #98bad5;
+    --enhanced-glow-color: #d8e1e8;
+    --btn-color: #d8e1e8;
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: x-large;
+    
+    background-color: var(--btn-color);
+    border-radius: 100px;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+   }
+   
+   button::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+    
+   }
+   
+   button:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+   }
+   
+   button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+           0 0 2.5em 2em var(--glow-spread-color),
+           inset 0 0 .5em .25em var(--glow-color);
+    
+   }
+
+.button-align-container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-around; 
+    margin: 8%; 
+    flex-wrap: wrap;
+    
+}
+
+.bg-custom{
+
+    background-color: white;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    
+}
